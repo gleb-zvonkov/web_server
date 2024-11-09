@@ -1,0 +1,10 @@
+[package]
+name = "server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+#hyper = "0.14"
+hyper = { version = "0.14.27", features = ["http1", "server", "tcp"] }
+tokio = { version = "1", features = ["full"] }
+num_cpus = "1.13"
